@@ -1,4 +1,3 @@
-//Bubble Sort - using single for loop:
 package Array_Program1;
 
 public class Array_Sort {

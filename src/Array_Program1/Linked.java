@@ -28,15 +28,15 @@ public class Linked {
 			System.out.println(nd.getIndex()+" : "+nd.getName());
 			
 		}*/
-		int arr1[]= {1,2,3,4,5,6};
-		LinkedList<Integer> arr = new LinkedList<Integer>();
+		int arr[]= {1,2,3,4,5,6};
+		LinkedList<Integer> arr1 = new LinkedList<Integer>();
 		for(int n:arr)
 		{
-			arr.add(n);
+			arr1.add(n);
 		}
-		arr.add(3);
-		arr.add(4);
-		int a=arr.size();
+		arr1.add(3);
+		arr1.add(4);
+		int a=arr1.size();
 		System.out.println(a);
 
 	}
