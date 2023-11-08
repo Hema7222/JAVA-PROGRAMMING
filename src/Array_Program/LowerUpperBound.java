@@ -1,28 +1,3 @@
-/*package Array_Program;
-
-public class LowerUpperBound {
-
-	public static void main(String[] args) 
-	{
-		int arr[]= {9,10,12,22,49,58,78,100};
-		//System.out.println("Enter the number: ");
-		recursive(arr,0);
-
-	}
-
-	private static void recursive(int[] arr,int i)
-	{
-		if(arr.length==(i+1))
-			return;
-		else
-		{
-			System.out.println(i+": "+arr[i]);
-			recursive(arr,i+1);
-		}
-	}
-}*/
-
-
 package Array_Program;
 
 public class LowerUpperBound {
