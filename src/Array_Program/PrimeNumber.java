@@ -1,3 +1,4 @@
+//Main Program
 package Array_Program;
 
 import java.util.LinkedList;
@@ -6,7 +7,7 @@ public class PrimeNumber {
 
 	public LinkedList<Integer> prime(int arr[], int count){
 		LinkedList<Integer> res = new LinkedList<Integer>();
-		int loop=0;
+		int loop=0;                      //To check how many times loop is running
 		for(int i=0;i<arr.length;i++)
 		{
 			count=0;
@@ -17,7 +18,7 @@ public class PrimeNumber {
 					count=1;
 					break;
 				}
-				loop++;
+				loop++;                   //To continue the loop if the condition fails
 			}
 			if(count==0)
 			{
