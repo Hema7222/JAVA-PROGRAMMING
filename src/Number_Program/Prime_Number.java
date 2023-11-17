@@ -9,7 +9,7 @@ public class Prime_Number {
 		System.out.println("Enter the Number");     //n=11
 		int n=s.nextInt();
 		int flag=0;
-		//for(int i=2;i<n/2;i++)           //Time and space complexity
+		//for(int i=2;i<n/2;i++)                     //Time and space complexity
 		
 		for(int i=2;i<n;i++)                        //[2<11; 2++] [3<11; 3++] [4<11; 4++].....[10<11; 10++] [11<11] not satisfied
 		{
