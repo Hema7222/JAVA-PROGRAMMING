@@ -20,7 +20,7 @@ public class Fibonacci_series {
 		int n=s.nextInt();
 		int f1=0,f2=1,f3;
 		System.out.print(f1+" "+f2+" ");
-		for(int j=3;j<=n;j++)
+		for(int j=2;j<=n;j++)
 		{
 			f3=f1+f2;
 			System.out.print(f3+" ");

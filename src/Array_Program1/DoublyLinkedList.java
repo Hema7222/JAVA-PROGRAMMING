@@ -36,6 +36,60 @@ public class DoublyLinkedList {
 				tail.next=null;
 			}
 		}
+		public void addFirst(int data)
+		{
+			Node newHead = new Node(data);
+			if(head == null)
+				newHead.next = null;
+			else
+			{
+				head.previous = newHead;
+				newHead.next = head;
+			}
+			head = newHead;
+			head.previous = null;
+		}
+		
+		public void deleteFirst(int data)
+		{
+			//Node newHead = new Node(data);
+			if(head == tail)
+			{
+				return;
+			}
+			else if(head!=tail)
+			{
+				head = head.next;
+				head.previous = null;
+			}
+			else
+			{
+				head=null;
+				tail=null;
+			}
+					
+		}
+		
+		public void deleteLast(int data)
+		{
+			//Node newHead = new Node(data);
+			if(head == tail)
+			{
+				return;
+			}
+			else if(head!=tail)
+			{
+				tail = tail.previous;
+				tail.next = null;
+			}
+			else
+			{
+				head=null;
+				tail=null;
+			}
+					
+		}
+		
 		public void display() {
 			Node current=head;
 			

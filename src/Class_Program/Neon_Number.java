@@ -10,6 +10,7 @@ public class Neon_Number {
 		int n=s.nextInt();
 		int rem,sum=0;                             //temp=n                                           
 		double squareroot = Math.sqrt(n);          //n=n*n;
+		System.out.println(squareroot);
 		while(n>0)
 		{
 			rem=n%10;
