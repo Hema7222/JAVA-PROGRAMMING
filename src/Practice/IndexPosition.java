@@ -1,6 +1,7 @@
 package Practice;
 
 public class IndexPosition {
+
 	public int test(String str){
         char charToFind = 'o';
 
@@ -15,6 +16,7 @@ public class IndexPosition {
 	}
 }
 
+	
 //Another method:
 
 /*String[] pos = name.split(" ");

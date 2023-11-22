@@ -9,10 +9,21 @@ public class ClsMain {
 		String str = "Power";
 		i.test(str);*/
 		
+		
+		
 		//Duplicate Character Program:
-		DuplicateChar c = new DuplicateChar();
+		/*DuplicateChar c = new DuplicateChar();
 		String str = "moment";
-		c.Duplicate(str);
+		c.Duplicate(str);*/
+		
+		
+		
+		//String Example:
+		StringExample s = new StringExample();
+		String b = "welcome";
+		String a = "hello world";
+		String c = "welcome hello world";
+		s.example(b, a, c);
 
 	}
 

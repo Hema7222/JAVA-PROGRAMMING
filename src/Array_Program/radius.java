@@ -19,7 +19,7 @@ public class radius {
 
 }*/
 
-/*package Array_Program;
+package Array_Program;
 
 import java.util.Scanner;
 
@@ -38,7 +38,7 @@ public class radius {
 			System.out.println((int)Math.pow(a,b)); 
 		s.close();
 	}
-}*/
+}
 
 
 /*package Array_Program;
@@ -79,7 +79,7 @@ INPUT
 1 2 3 3
 OUTPUT
 yes*/
-package Array_Program;
+/*package Array_Program;
 
 import java.util.Scanner;
 
@@ -115,6 +115,6 @@ public class radius {
 		}
 		s.close();
 	}
-}
+}*/
 
 
