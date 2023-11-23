@@ -1,12 +1,9 @@
 package Queue;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class QueueExample {
 
 	public static void main(String[] args) {
-		Queue<Integer> queue = new LinkedList<Integer>();
+		/*Queue<Integer> queue = new LinkedList<Integer>();   
 		
 		queue.add(100);
 		queue.offer(20);              //offer -> enque -> add
@@ -31,6 +28,25 @@ public class QueueExample {
 		System.out.println("size: "+queue.size());
 		
 		System.out.println("Hashcode: "+queue.hashCode());
+	*/
+		
+		
+		
+		//Queue Single Linked List:
+		QueueLinkedList<String> q = new QueueLinkedList<String>();		
+		q.offer("HD");
+		q.offer("Hema");
+		q.offer("Mano");
+		q.offer("swathi");
+		q.offer("dhanush");
+		
+		System.out.println("Size: "+q.getSize());
+		q.display();
+		
+		q.poll();
+		System.out.println("Size after using Poll: "+q.getSize());
+		
+		q.display();
 
 	}
 

@@ -40,6 +40,11 @@ public class SinglyLinkedDeleteLast {
 		}
 		else if(head!=tail)
 		{
+			Node current=head;
+			while(current.next!=tail) {                
+				current=current.next;                      
+			}
+			tail=current;
 			tail.next=null;
 		}
 		else
