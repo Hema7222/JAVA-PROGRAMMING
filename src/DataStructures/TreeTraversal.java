@@ -50,31 +50,32 @@ public class TreeTraversal {
 //Inorder, Preorder and Postorder using while loop:
 	
 	public void inOrder(TreeNode<Integer> currentRoot) {
-        while (currentRoot != null) 
+        while (currentRoot != null)                     //loop continues until it covers entire tree
         {
             if (currentRoot.Left == null) 
             {
-                System.out.println(currentRoot.data);
+                System.out.println(currentRoot.data);       
                 currentRoot = currentRoot.Right;
             } 
             else 
             {
                 
-                TreeNode<Integer> rightmost = currentRoot.Left;
+                TreeNode<Integer> rightmost = currentRoot.Left;    // initialize rightmost to the left child
                 while (rightmost.Right != null && rightmost.Right != currentRoot) 
                 {
-                    rightmost = rightmost.Right;
+                    rightmost = rightmost.Right;      //move rightmost --> rightmost.Right in left sub tree
                 }
 
                 if (rightmost.Right == null) 
                 {
-                    System.out.println(currentRoot.data);  
-                    rightmost.Right = currentRoot;
+                    System.out.println(currentRoot.data);  //print the node and create a temp link 
+                    rightmost.Right = currentRoot;        //continue the loop until it completes the process in left subtree
                     currentRoot = currentRoot.Left;
-                } else 
+                } 
+                else 
                 {
-                    rightmost.Right = null;
-                    currentRoot = currentRoot.Right;
+                    rightmost.Right = null;        //after completing left side now rightmost.Right will be null
+                    currentRoot = currentRoot.Right;     //now it will move to right child
                 }
             }
         }
