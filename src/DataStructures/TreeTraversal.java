@@ -11,45 +11,86 @@ public class TreeTraversal {
 		inOrder(root);
 	}*/
 	
-	/*public void inOrder(TreeNode<Integer> currentRoot) {
+	public void inOrder(TreeNode<Integer> currentRoot) {
 		if(currentRoot != null)
 		{
 			inOrder(currentRoot.Left);
 			System.out.println(currentRoot.data);
 			inOrder(currentRoot.Right);
 		}
-	}*/
+	}
 	
 	public void preOrder() {
 		preOrder(root);
 	}
 	
-	/*public void preOrder(TreeNode<Integer> currentRoot) {
+	public void preOrder(TreeNode<Integer> currentRoot) {
 		if(currentRoot != null)
 		{
 			System.out.println(currentRoot.data);
 			preOrder(currentRoot.Left);
 			preOrder(currentRoot.Right);
 		}
-	}*/
+	}
 	
 	public void postOrder() {
 		postOrder(root);
 	}
 	
-	/*public void postOrder(TreeNode<Integer> currentRoot) {
+	public void postOrder(TreeNode<Integer> currentRoot) {
 		if(currentRoot != null)
 		{
 			postOrder(currentRoot.Left);
 			postOrder(currentRoot.Right);
 			System.out.println(currentRoot.data);
 		}
-	}*/
+	}
+	
+	//Maximum depth of a tree
+	public int height(TreeNode<Integer> currentRoot) {
+		if(currentRoot == null) {
+			return 0;
+		}
+		
+		/*int leftheight=height(currentRoot.Left);
+		int rightheight=height(currentRoot.Right);
+		return Math.max(leftheight, rightheight)+1;*/
+		
+		else {
+			Integer data = currentRoot.data;
+			int leftheight=height(currentRoot.Left);
+			int rightheight=height(currentRoot.Right);
+			
+			if(leftheight>rightheight)
+			{
+				return leftheight+1;
+			}
+			else
+			{
+				return rightheight+1;
+			}
+			
+		}
+	}
+	public TreeNode<Integer> mirror(TreeNode<Integer> currentRoot)
+	{
+		if(currentRoot==null) {
+			return currentRoot;
+		}
+		TreeNode<Integer> left=mirror(currentRoot.Left);
+		TreeNode<Integer> right=mirror(currentRoot.Right);
+		
+		//System.out.println();
+		currentRoot.Left=right;
+		currentRoot.Right=left;
+		
+		return currentRoot;
+	}
 	
 	
 //Inorder, Preorder and Postorder using while loop:
 	
-	public void inOrder(TreeNode<Integer> currentRoot) {
+	/*public void inOrder(TreeNode<Integer> currentRoot) {
         while (currentRoot != null)                     //loop continues until it covers entire tree
         {
             if (currentRoot.Left == null) 
@@ -141,5 +182,5 @@ public class TreeTraversal {
                 }
             }
         }
-    }
+    }*/
 }
