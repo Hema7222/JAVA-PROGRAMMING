@@ -13,6 +13,7 @@ public class StackExample {
 		stack.push(23);
 		stack.push(25);
 		
+		
 		System.out.println(stack);
 		System.out.println(stack.peek());
 		
