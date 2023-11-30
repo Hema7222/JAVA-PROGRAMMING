@@ -7,6 +7,7 @@ public class TreeTraversal {
 		this.root = root;
 	}
 	
+	
 	/*public void inOrder() {
 		inOrder(root);
 	}*/
@@ -27,6 +28,7 @@ public class TreeTraversal {
 	public void preOrder(TreeNode<Integer> currentRoot) {
 		if(currentRoot != null)
 		{
+			
 			System.out.println(currentRoot.data);
 			preOrder(currentRoot.Left);
 			preOrder(currentRoot.Right);
@@ -40,6 +42,7 @@ public class TreeTraversal {
 	public void postOrder(TreeNode<Integer> currentRoot) {
 		if(currentRoot != null)
 		{
+			//if(currentRoot == n)
 			postOrder(currentRoot.Left);
 			postOrder(currentRoot.Right);
 			System.out.println(currentRoot.data);
@@ -72,7 +75,7 @@ public class TreeTraversal {
 			
 		}
 	}
-	public TreeNode<Integer> mirror(TreeNode<Integer> currentRoot)
+	/*public TreeNode<Integer> mirror(TreeNode<Integer> currentRoot)
 	{
 		if(currentRoot==null) {
 			return currentRoot;
@@ -85,7 +88,7 @@ public class TreeTraversal {
 		currentRoot.Right=left;
 		
 		return currentRoot;
-	}
+	}*/
 	
 	
 //Inorder, Preorder and Postorder using while loop:
