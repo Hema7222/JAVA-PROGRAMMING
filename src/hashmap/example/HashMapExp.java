@@ -5,7 +5,6 @@ import java.util.HashMap;
 
 public class HashMapExp {
 	static boolean answer = "false" != null;
-
 	public static void main(String[] args) {
 	HashMap<String, String> h = new HashMap<String,String>();
 	h.put("Name", "Hema");
@@ -34,8 +33,7 @@ public class HashMapExp {
 	System.out.println(h.containsValue("hema"));
 	
 	
-	
-	System.out.println("equals: "+h.equals("hema"));
+	System.out.println("equals: "+h.equals(h));
 	
 	String search ="Name";
 	

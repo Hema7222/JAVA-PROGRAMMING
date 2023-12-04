@@ -60,7 +60,7 @@ public class TreeTraversal {
 		return Math.max(leftheight, rightheight)+1;*/
 		
 		else {
-			Integer data = currentRoot.data;
+			//Integer data = currentRoot.data;
 			int leftheight=height(currentRoot.Left);
 			int rightheight=height(currentRoot.Right);
 			

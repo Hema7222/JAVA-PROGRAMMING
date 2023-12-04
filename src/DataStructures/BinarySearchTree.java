@@ -1,7 +1,7 @@
 package DataStructures;
 
 public class BinarySearchTree {
-	TreeNode<Integer> root;          //BSTNode root;
+	TreeNode<Integer> root;          
 	
 	public BinarySearchTree(TreeNode<Integer> root)
 	{

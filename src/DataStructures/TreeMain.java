@@ -3,6 +3,28 @@ package DataStructures;
 public class TreeMain {
 
 	public static void main(String[] args) {
+		
+		
+		//LINEAR SEARCH:
+		/*LinearSearch ls = new LinearSearch();
+		int arr[] = {10,2,30,40,50,60,70,80,90,100};
+		int search = 80;
+		int result=ls.LS(arr, search);
+		System.out.println(+search+ " found at index position: "+result);*/
+		
+		
+		//BINARY SEARCH:
+		BinarySearch bs1 = new BinarySearch();
+		int arr[]= {2,5,7,9,10,14,17,19,24,30};
+		int search=17;
+		
+		int result = bs1.bs(arr, search);
+		System.out.println(search+" found at index position: " +result);
+		
+		
+		
+		//BINARY SEARCH TREE:
+		
 		/*TreeNode<Integer> n = new TreeNode<Integer>(50);
 		
 		BinarySearchTree bst = new BinarySearchTree(n);
@@ -23,7 +45,10 @@ public class TreeMain {
         System.out.println("search3: "+bst.search(search3));*/
 		
 		
-		TreeNode<Integer> n = new TreeNode<Integer>(38);
+		
+		//BINARY TREE:
+		
+		/*TreeNode<Integer> n = new TreeNode<Integer>(38);
 		n.Left = new TreeNode<Integer>(27);
 		n.Right = new TreeNode<Integer>(25);
 		n.Left.Left = new TreeNode<Integer>(20);
@@ -64,7 +89,7 @@ public class TreeMain {
 		
 		
 		
-		TreeTraversal traversal = new TreeTraversal(n);
+		/*TreeTraversal traversal = new TreeTraversal(n);
 		System.out.println("------inOrder------");
 		traversal.inOrder(n);
 		System.out.println("------preOrder------");

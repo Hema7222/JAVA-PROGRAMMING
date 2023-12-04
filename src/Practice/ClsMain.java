@@ -31,13 +31,32 @@ public class ClsMain {
 		
 		// Operations Example:
 		
-		OperstionsExample s = new OperstionsExample();
+		/*OperstionsExample s = new OperstionsExample();
 		
 		s.setA(10);
 		s.setB(5);
 		System.out.println("Add: "+s.getC());
 		System.out.println("Sub: "+s.getX());
-		System.out.println("Mul: "+s.getY());
+		System.out.println("Mul: "+s.getY());*/
+		
+		//BINARY TREE TRAVERSAL:
+		TreeNode1<Integer> n = new TreeNode1<Integer>(38);
+		n.left = new TreeNode1<Integer>(27);
+		n.right = new TreeNode1<Integer>(25);
+		n.left.left = new TreeNode1<Integer>(20);
+		n.left.right = new TreeNode1<Integer>(18);
+		n.right.left = new TreeNode1<Integer>(45);
+		n.right.right = new TreeNode1<Integer>(32);
+		
+		TreeTraversal1 tt = new TreeTraversal1(n);
+		System.out.println("------PostOrder------");
+		tt.postOrder(n);
+		System.out.println("------InOrder------");
+		tt.inOrder(n);
+		System.out.println("------PreOrder------");
+		tt.preOrder(n);
+		System.out.println("-------depth-------");
+		System.out.println(+tt.height(n));
 
 	}
 
