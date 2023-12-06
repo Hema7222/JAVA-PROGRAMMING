@@ -14,12 +14,12 @@ public class TreeMain {
 		
 		
 		//BINARY SEARCH:
-		BinarySearch bs1 = new BinarySearch();
+		/*BinarySearch bs1 = new BinarySearch();
 		int arr[]= {2,5,7,9,10,14,17,19,24,30};
 		int search=17;
 		
 		int result = bs1.bs(arr, search);
-		System.out.println(search+" found at index position: " +result);
+		System.out.println(search+" found at index position: " +result);*/
 		
 		
 		
@@ -48,7 +48,7 @@ public class TreeMain {
 		
 		//BINARY TREE:
 		
-		/*TreeNode<Integer> n = new TreeNode<Integer>(38);
+		TreeNode<Integer> n = new TreeNode<Integer>(38);
 		n.Left = new TreeNode<Integer>(27);
 		n.Right = new TreeNode<Integer>(25);
 		n.Left.Left = new TreeNode<Integer>(20);
@@ -89,7 +89,7 @@ public class TreeMain {
 		
 		
 		
-		/*TreeTraversal traversal = new TreeTraversal(n);
+		TreeTraversal traversal = new TreeTraversal(n);
 		System.out.println("------inOrder------");
 		traversal.inOrder(n);
 		System.out.println("------preOrder------");
@@ -101,9 +101,9 @@ public class TreeMain {
 		System.out.println(+traversal.height(n));
 		
 		
-		/*System.out.println(traversal.mirror(n));
+		System.out.println(traversal.mirror(n));
 		TreeNode<Integer> mirrorRoot = traversal.mirror(n);
-		traversal.preOrder(mirrorRoot);*/
+		traversal.preOrder(mirrorRoot);
 		
 		        
 

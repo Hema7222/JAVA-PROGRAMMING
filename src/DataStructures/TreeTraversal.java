@@ -75,7 +75,7 @@ public class TreeTraversal {
 			
 		}
 	}
-	/*public TreeNode<Integer> mirror(TreeNode<Integer> currentRoot)
+	public TreeNode<Integer> mirror(TreeNode<Integer> currentRoot)
 	{
 		if(currentRoot==null) {
 			return currentRoot;
@@ -88,7 +88,7 @@ public class TreeTraversal {
 		currentRoot.Right=left;
 		
 		return currentRoot;
-	}*/
+	}
 	
 	
 //Inorder, Preorder and Postorder using while loop:

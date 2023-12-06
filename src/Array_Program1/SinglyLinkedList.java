@@ -31,6 +31,17 @@ public class SinglyLinkedList {
 		}
 	}
 	
+	public int length(Node currentRoot) {
+		if(currentRoot==null) {
+			return 0;
+		}
+		System.out.println(currentRoot.data+": Function call");
+		int len = length(currentRoot.next);
+		len=len+1;
+		System.out.println(currentRoot.data+": "+len);
+		return len;
+	}
+	
 	public void display() {
 		Node current=head;
 		

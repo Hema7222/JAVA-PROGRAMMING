@@ -39,7 +39,7 @@ public class ClsMain {
 		System.out.println("Sub: "+s.getX());
 		System.out.println("Mul: "+s.getY());*/
 		
-		//BINARY TREE TRAVERSAL:
+		//BINARY TREE TRAVERSAL:             
 		TreeNode1<Integer> n = new TreeNode1<Integer>(38);
 		n.left = new TreeNode1<Integer>(27);
 		n.right = new TreeNode1<Integer>(25);
@@ -47,6 +47,7 @@ public class ClsMain {
 		n.left.right = new TreeNode1<Integer>(18);
 		n.right.left = new TreeNode1<Integer>(45);
 		n.right.right = new TreeNode1<Integer>(32);
+		n.right.right.right=new TreeNode1<Integer>(30);
 		
 		TreeTraversal1 tt = new TreeTraversal1(n);
 		System.out.println("------PostOrder------");
@@ -55,8 +56,12 @@ public class ClsMain {
 		tt.inOrder(n);
 		System.out.println("------PreOrder------");
 		tt.preOrder(n);
-		System.out.println("-------depth-------");
+		System.out.println("-------height-------");
 		System.out.println(+tt.height(n));
+		System.out.println("----lowest----");
+		System.out.println(+tt.lowest(n));
+		System.out.println("------diameter------");
+		System.out.println(+tt.diameter(n));
 
 	}
 

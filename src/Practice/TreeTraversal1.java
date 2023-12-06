@@ -68,5 +68,57 @@ public class TreeTraversal1 {
 			
 		}
 	}
+	
+	
+	
+	public int lowest(TreeNode1<Integer> currentRoot) {
+		if(currentRoot==null) {
+			return 0;
+		}
+		
+		else {
+			int leftheight=height(currentRoot.getLeft());
+			int rightheight=height(currentRoot.getRight());
+			if(leftheight<rightheight)
+			{
+				return leftheight+1;
+			}
+			else
+			{
+				return rightheight+1;
+			}
+		}
+	}
+	
+	public int diameter(TreeNode1<Integer> currentRoot) {
+	    if (currentRoot == null) {
+	        return 0;
+	    }
 
+	    int lheight = height(currentRoot.getLeft());
+	    int rheight = height(currentRoot.getRight());
+
+	    int ldiameter = diameter(currentRoot.getLeft());
+	    int rdiameter = diameter(currentRoot.getRight());
+
+	    System.out.println(currentRoot.getData() + " lh: " + lheight + " rh: " + rheight
+	            + " ldia: " + ldiameter + " rdia: " + rdiameter);
+
+	    
+	    //return Math.max((lheight + rheight + 1), Math.max(ldiameter, rdiameter));
+	
+			
+			
+			if((lheight+rheight+1)>(ldiameter+rdiameter))
+			{
+				return lheight+rheight+1;
+			}
+			else
+			{
+				return ldiameter+rdiameter;
+	}
+	}
 }
+
+
+
