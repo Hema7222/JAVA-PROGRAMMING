@@ -118,6 +118,26 @@ public class TreeTraversal1 {
 				return ldiameter+rdiameter;
 	}
 	}
+	
+	
+	
+	public static TreeNode1<Integer> shortPath(TreeNode1<Integer> currentRoot,int a,int b) {
+		if(currentRoot==null||currentRoot.data==a||currentRoot.data==b) {
+			return currentRoot;
+		}
+		else {
+			TreeNode1<Integer> left=shortPath(currentRoot.getLeft(), a, b);
+			TreeNode1<Integer> right=shortPath(currentRoot.getRight(), a, b);
+			
+			if(left==null) {
+				return right;
+			}else if(right==null) {
+				return left;
+			}else {
+				return currentRoot;
+			}
+		}
+	}
 }
 
 

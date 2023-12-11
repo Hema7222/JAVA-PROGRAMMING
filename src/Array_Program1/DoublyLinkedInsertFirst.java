@@ -30,6 +30,44 @@ public class DoublyLinkedInsertFirst {
 			head.previous = null;
 		}
 		
+		public void insertmid(int data) {
+			Node newNode = new Node(data);
+			if(head==null) {
+				head=newNode;
+				tail=newNode;
+				head.previous=null;
+				tail.next=null;
+				
+			}
+			else {
+				int len=0;
+				Node current=head;
+				while(current!=null) {
+					len++;
+					current=current.next;
+				}
+				int mid=len/2;
+				current=head;
+				for(int i=1;i<mid;i++) {
+					current=current.next;
+				}
+				newNode.next=current.next;
+				newNode.previous=current;
+				
+				/*if(current!=null) {
+					current.next=head;
+				}
+				else
+				{
+					tail=newNode;
+				}*/
+				
+				current.next=newNode;
+				
+				
+			}
+		}
+		
 		//create addnode
 		public void addNode(int data) {
 			Node newNode = new Node(data);
@@ -71,9 +109,10 @@ public class DoublyLinkedInsertFirst {
 	public static void main(String[] args) {
 		DoublyLinkedInsertFirst d = new DoublyLinkedInsertFirst();
 		d.addNode(1);
-		d.addNode(2);
-		d.addNode(3);
-		d.addFirst(45);
+		d.addNode(6);
+		d.addNode(8);
+		d.addNode(45);
+		d.insertmid(7);
 		
 		d.display();
 

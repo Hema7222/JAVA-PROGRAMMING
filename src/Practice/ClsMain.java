@@ -62,6 +62,12 @@ public class ClsMain {
 		System.out.println(+tt.lowest(n));
 		System.out.println("------diameter------");
 		System.out.println(+tt.diameter(n));
+		//Logic logic=new Logic(n);
+		TreeNode1<Integer> LCA= TreeTraversal1.shortPath(n,18,30);
+		if(LCA!=null)
+			System.out.println("Shortest path b/w 18 & 30 :"+LCA.data);
+		else
+			System.out.println("No path found");
 
 	}
 

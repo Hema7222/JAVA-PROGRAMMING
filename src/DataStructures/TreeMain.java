@@ -25,30 +25,37 @@ public class TreeMain {
 		
 		//BINARY SEARCH TREE:
 		
-		/*TreeNode<Integer> n = new TreeNode<Integer>(50);
+		TreeNode<Integer> n = new TreeNode<Integer>(50);
 		
 		BinarySearchTree bst = new BinarySearchTree(n);
 		
 		
-        bst.insert(30);
-        bst.insert(70);
-        bst.insert(20);
-        bst.insert(40);
-        bst.insert(60);
-        bst.insert(80);
+        bst.insert(5);
+        bst.insert(6);
+        bst.insert(1);
+        bst.insert(3);
+        bst.insert(2);
+        bst.insert(8);
+        bst.insert(10);
         
         int search1=70;
         int search2=75;
         int search3=(80);
         System.out.println("search1: "+bst.search(search1));
         System.out.println("search2: "+bst.search(search2));
-        System.out.println("search3: "+bst.search(search3));*/
+        System.out.println("search3: "+bst.search(search3));
+        
+        TreeNode<Integer> LCA= BinarySearchTree.shortPath(n,3,10);
+		if(LCA!=null)
+			System.out.println("Shortest path between 3 & 10 :"+LCA.data);
+		else
+			System.out.println("No path found");
 		
 		
 		
 		//BINARY TREE:
 		
-		TreeNode<Integer> n = new TreeNode<Integer>(38);
+		/*TreeNode<Integer> n = new TreeNode<Integer>(38);
 		n.Left = new TreeNode<Integer>(27);
 		n.Right = new TreeNode<Integer>(25);
 		n.Left.Left = new TreeNode<Integer>(20);
@@ -89,7 +96,7 @@ public class TreeMain {
 		
 		
 		
-		TreeTraversal traversal = new TreeTraversal(n);
+		/*TreeTraversal traversal = new TreeTraversal(n);
 		System.out.println("------inOrder------");
 		traversal.inOrder(n);
 		System.out.println("------preOrder------");
@@ -103,7 +110,7 @@ public class TreeMain {
 		
 		System.out.println(traversal.mirror(n));
 		TreeNode<Integer> mirrorRoot = traversal.mirror(n);
-		traversal.preOrder(mirrorRoot);
+		traversal.preOrder(mirrorRoot);*/
 		
 		        
 

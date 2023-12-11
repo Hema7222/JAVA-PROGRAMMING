@@ -33,6 +33,25 @@ public class BinarySearchTree {
 			
 	}
 	
+	
+	public static TreeNode<Integer> shortPath(TreeNode<Integer> currentRoot,int a,int b) {
+		if(currentRoot==null||currentRoot.data==a||currentRoot.data==b) {
+			return currentRoot;
+		}
+		else {
+			TreeNode<Integer> left=shortPath(currentRoot.Left, a, b);
+			TreeNode<Integer> right=shortPath(currentRoot.Right, a, b);
+			
+			if(left==null) {
+				return right;
+			}else if(right==null) {
+				return left;
+			}else {
+				return currentRoot;
+			}
+		}
+	}
+	
 	public void insert(int data) {
 		insert(root,data);
 	}
