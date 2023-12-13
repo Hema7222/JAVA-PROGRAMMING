@@ -1,3 +1,4 @@
+
 package abstraction;
 
 abstract class AbstractExample {
