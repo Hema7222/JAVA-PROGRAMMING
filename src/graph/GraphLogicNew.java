@@ -79,6 +79,100 @@ public class GraphLogicNew {
 		DFSRecursive(startValue, verified);
 	}
 	
+	/*public boolean iscycleRecursive(int startValue, HashMap<Integer, Boolean> verified, HashMap<Integer, Boolean> cycleArr) {
+		ArrayList<Edges> startNodeEdges = vertics.get(startValue);
+		//System.out.println(startValue);
+		
+		if(cycleArr.get(startValue)) {
+			return true;
+		}
+		
+		if(verified.get(startValue)) {
+			return false;
+		}
+		
+		for(int i=0;i<startNodeEdges.size();i++) {
+			int destinationValue = startNodeEdges.get(i).getDestination();
+			
+			//if(!verified.get(destinationValue)) {
+				//cycleArr.put(destinationValue,true);
+				if(iscycleRecursive(destinationValue, verified, cycleArr))
+					return true;
+				
+			}
+			
+		
+		//cycleArr.put(startValue,true);
+		return false;
+	}
+	
+	
+	public boolean iscycle() {
+		HashMap<Integer, Boolean> verified = new HashMap<Integer, Boolean>();
+		HashMap<Integer, Boolean> cycleArr = new HashMap<Integer, Boolean>();
+		int startValue = 0;
+		for(int i=0; i<vertics.keySet().size(); i++) {
+			int key = (int)vertics.keySet().toArray()[i];
+			verified.put(key, false);
+			cycleArr.put(key, false);
+			//System.out.println();
+			
+			if(i==0) {
+				startValue=key;
+			}
+		}
+		
+		verified.put(startValue, true);
+		cycleArr.put(startValue, true);
+		
+		if(iscycleRecursive(startValue,verified,cycleArr))
+			return true;
+		
+		return false;
+	}*/
+	
+//	public boolean isCyclic() {
+//        HashMap<Integer, Boolean> verified = new HashMap<>();
+//        HashMap<Integer, Boolean> cycleArr = new HashMap<>();
+//
+//        vertics.keySet().forEach(key -> {
+//        	verified.put(key, false);
+//            cycleArr.put(key, false);
+//        });
+//
+//        for (int key : vertics.keySet()) {
+//            if (isCycle(key, verified, cycleArr)) {
+//                return true;
+//            }
+//        }
+//
+//        return false;
+//    }
+//
+//    private boolean isCycle(int startvalue, HashMap<Integer, Boolean> verified, HashMap<Integer, Boolean>cycleArr) {
+//        if (cycleArr.get(startvalue)) {
+//            return true; // Cycle detected
+//        }
+//
+//        if (verified.get(startvalue)) {
+//            return false; // Already verified, no cycle
+//        }
+//
+//        verified.put(startvalue, true);
+//        cycleArr.put(startvalue, true);
+//
+//        ArrayList<Edges> startNodeEdges = vertics.get(startvalue);
+//        for (int i = 0; i < startNodeEdges.size(); i++) {
+//            int destinationValue = startNodeEdges.get(i).getDestination();
+//            if (isCycle(destinationValue, verified, cycleArr)) {
+//                return true;
+//            }
+//        }
+//
+//        cycleArr.put(startvalue, false); // Backtrack
+//        return false;
+//    }
+	
 	public void print() {
 		vertics.keySet().forEach(key -> {
 			vertics.get(key).forEach(edge -> {
