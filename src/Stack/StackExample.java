@@ -16,6 +16,8 @@ public class StackExample {
 		
 		System.out.println(stack);
 		System.out.println(stack.peek());
+		System.out.println(stack.peek());
+		
 		
 		int last_removed_value = stack.pop();
 		System.out.println("last_removed_value: "+last_removed_value);

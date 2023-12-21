@@ -29,3 +29,6 @@ public class Abundant_Number {
 	}
 
 }
+
+
+

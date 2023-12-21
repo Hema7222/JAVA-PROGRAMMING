@@ -39,10 +39,11 @@ public class QueueExample {
 		q.offer("Mano");
 		q.offer("swathi");
 		q.offer("dhanush");
+	
 		
 		System.out.println("Size: "+q.getSize());
 		q.display();
-		
+		System.out.println("----------");
 		q.poll();
 		System.out.println("Size after using Poll: "+q.getSize());
 		
